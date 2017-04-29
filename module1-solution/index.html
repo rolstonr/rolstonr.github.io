@@ -1,0 +1,38 @@
+<!--
+Richard Rolston
+Coursera Class: Single Page Web Applications with AngularJs
+Module 1 Coding Assignment
+Instructor: Yaakov Chaikin
+Date: April 28, 2017
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Lunch Checker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <style>
+      .message { font-size: 1.3em; font-weight: bold; }
+    </style>
+  </head>
+<body ng-app="LunchCheck">
+   <div class="container" ng-controller="LunchCheckController">
+     <h1>Lunch Checker</h1>
+         <div class="form-group">
+           <!-- Note: empty items, i.e., , , are not considered towards the count -->
+             <input id="lunch-menu" type="text"
+             placeholder=""
+             class="form-control"
+             ng-model="input">
+         </div>
+         <div class="form-group">
+             <button ng-click="displayMessage()" class="btn btn-default">Check If Too Much</button>
+         </div>
+         <div class="form-group message">
+           {{msg}}
+         </div>
+   </div>
+</body>
+</html>
