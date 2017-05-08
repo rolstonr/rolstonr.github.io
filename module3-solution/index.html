@@ -1,0 +1,42 @@
+<!--
+Richard Rolston
+Coursera Class: Single Page Web Applications with AngularJs
+Module 3 Coding Assignment
+Instructor: Yaakov Chaikin
+Date: May 13, 2017
+-->
+<!DOCTYPE html>
+<html lang="en" ng-app='NarrowItDownApp'>
+  <head>
+    <title>Narrow Down Your Chinese Menu Choice</title>
+    <meta meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+  </head>
+  <body>
+    <div class="container" id="list" ng-controller='NarrowItDownController as list'>
+      <h1>Narrow Down Your Chinese Menu Choice</h1>
+
+      <div class="form-group">
+        <input type="text" ng-model="list.itemName" placeholder="search term" class="form-control">
+      </div>
+
+      <div class="form-group narrow-button">
+        <button class="btn btn-primary" ng-click="list.addItem();">Narrow It Down For Me!</button>
+      </div>
+
+      <br><br><br><br>
+
+      <found-items
+        found="list.found"
+        title="{{list.title}}"
+        on-remove="list.removeItem(index)">
+      </found-items>
+
+    </div>
+
+  </body>
+</html>
