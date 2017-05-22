@@ -1,3 +1,10 @@
+/*
+Richard Rolston
+Coursera Class: Single Page Web Applications with AngularJs
+Module 4 Coding Assignment
+Instructor: Yaakov Chaikin
+Date: May 21, 2017
+*/
 (function() {
 'use strict';
 
