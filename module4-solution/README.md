@@ -1,2 +1,2 @@
-# module1-solution
+# module4-solution
 Rich's module 3 solution for the Coursera AngularJS class
