@@ -1,2 +1,2 @@
 # module4-solution
-Rich's module 3 solution for the Coursera AngularJS class
+Rich's module 4 solution for the Coursera AngularJS class
