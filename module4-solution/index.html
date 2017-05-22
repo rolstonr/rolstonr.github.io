@@ -1,0 +1,39 @@
+<!--
+Richard Rolston
+Coursera Class: Single Page Web Applications with AngularJs
+Module 4 Coding Assignment
+Instructor: Yaakov Chaikin
+Date: May 21, 2017
+-->
+<!DOCTYPE html>
+<html ng-app="MenuApp">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Restaurant Categories</title>
+  </head>
+  <body>
+    <h1>Welcome to Our Restaurant</h1>
+
+    <ui-view></ui-view>
+
+    <!-- libraries -->
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+
+    <!-- Modules -->
+    <script src="src/menu/data.module.js"></script>
+    <script src="src/menu/menuapp.module.js"></script>
+
+    <!-- Routes -->
+    <script src="src/routes.js"></script>
+
+    <!-- 'Menu' module artifacts -->
+    <script src="src/menu/categories.component.js"></script>
+    <script src="src/menu/items.component.js"></script>
+    <script src="src/menu/items.controller.js"></script>
+    <script src="src/menu/menudata.service.js"></script>
+    <script src="src/menu/categories.controller.js"></script>
+
+  </body>
+</html>
